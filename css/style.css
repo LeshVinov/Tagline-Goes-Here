@@ -1,0 +1,490 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    background: #2F343A;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1110px;
+    width: 100%;
+    margin: auto;
+}
+
+.block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upper_header {
+    background: #C8A35F;
+}
+
+.upper_header_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.language_item {
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.5;
+    background: none;
+    border: none;
+    transition: all .3s;
+    margin-right: 10px;
+}
+
+.language_item:last-child {
+    margin-right: 0;
+}
+
+.language_item:hover {
+    opacity: 1;
+}
+
+.mail_container {
+    color: #FFFFFF;
+    transition: all .3s;
+}
+
+.mail_container:hover {
+    color: #2F343A;
+}
+
+.lower_header {
+    display: flex;
+    justify-content: space-between;
+    background: #2F343A;
+    max-width: 1110px;
+    width: 100%;
+    margin: auto;
+    padding: 27px 0;
+}
+
+.logo_container {
+    display: flex;
+    align-items: center;
+}
+
+.logo_img {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #F2F2F2;
+    padding-right: 30px;
+}
+
+.logo {
+    margin-right: 11px;
+}
+
+.office_loc {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.nav_conatiner {
+    display: flex;
+    align-items: center;
+}
+
+.office_link {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.nav_item {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.nav_item:last-child {
+    margin-right: 0;
+}
+
+/* section_promo */
+
+.section_promo {
+    background: linear-gradient(0deg, rgba(47, 52, 58, 0.75), rgba(47, 52, 58, 0.75)), url(../img/TruckBG.jpg) no-repeat center / cover;
+    padding: 155px 0 220px;
+    position: relative;
+}
+
+.promo_container {
+    padding: 45px;
+    border: 1px solid #C8A35F;
+    box-sizing: border-box;
+    max-width: 920px;
+    width: 100%;
+}
+
+.section_promo-title {
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase; 
+    color: #FFFFFF;
+    margin-bottom: 45px;
+    
+}
+
+.section_promo-subtitle {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    max-width: 777px;
+    text-align: center;
+    margin: auto;
+}
+
+.mouse_link {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    bottom: 50px;
+    background: url(../img/mouse.svg) no-repeat center;
+}
+
+/* section_europe-ride */
+
+.section_europe-ride {
+    padding-top: 170px;
+    padding-bottom: 120px;
+}
+
+.section_europe-ride::before {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 587px;
+    left: 0px;
+    top: 789px;
+    background: #393F47;
+    z-index: 0;
+}
+
+.section_europe-ride::after {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 587px;
+    right: 0;
+    top: 789px;
+    background: #393F47;
+    z-index: 0;
+}
+
+.section_info {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.section_text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.section_title {
+    position: relative;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase; 
+    color: #FFFFFF;
+}
+
+.slider_title {
+    max-width: 445px;
+    margin-bottom: 30px;
+}
+
+.section_title::before {
+    content: '';
+    position: absolute;
+    width: 90px;
+    height: 6px;
+    background: #C8A35F;
+    bottom: 140px;
+}
+
+.section_desc {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+.slider_desc {
+    max-width: 445px;
+    margin-bottom: 50px;
+}
+
+.button {
+    background: #C8A35F;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.button_show-more {
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;    
+    color: #FFFFFF;
+    padding: 19px 48px;
+}
+
+.truck_img {
+    z-index: 1;
+}
+
+.slider-arrows_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.arrowR_container {
+    display: flex;
+    align-items: center;
+}
+
+.arrowL_container {
+    display: flex;
+    align-items: center;
+}
+
+.arrowR_container .arrow_text {
+    margin-right: 31px;
+}
+
+.arrowL_container .arrow_text {
+    margin-left: 31px;
+}
+
+.arrow_text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #C8A35F;
+}
+
+/* section_services */
+
+.section_services {
+    padding-top: 170px;
+    padding-bottom: 120px;
+}
+
+.section_services .section_title::before {
+    bottom: 77px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 276px;
+    width: 100%;
+    height: 180px;
+    padding: 128px 42px 35px;
+    background: #393F47 url(../img/planeW.png) no-repeat center 50px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    cursor:pointer;
+    transition: all .3s;
+}
+
+.card:nth-child(4) {
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+.card:nth-child(8) {
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.card:hover {
+    background: #C8A35F url(../img/planeB.png) no-repeat center 30px;
+}
+
+.card_name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/* section_about */
+
+.section_about {
+    position: relative;
+    padding-top: 246px;
+    padding-bottom: 200px;
+}
+
+.section_about .section_title::before {
+    bottom: 77px;
+}
+
+.section_about .section_desc {
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.section_about .section_text-container::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    margin-left: -205px;
+    top: 50%;
+    margin-top: -241px;
+    width: 410px;
+    height: 482px;
+    background: #393F47;
+    z-index: 0;
+}
+
+.about_cards {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.card_about {
+    max-width: 200px;
+    width: 100%;
+    height: 160px;
+    background: #FFFFFF;
+    border: 0.25px solid #C8A35F;
+    box-sizing: border-box;
+    padding: 25px 0;
+}
+
+.number {
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase; 
+    color: #2F343A;
+    margin-top: -10px;
+}
+
+.ofnumber {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.card_desc { 
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #000000;
+}
+
+.card_about-truck {
+    max-width: 200px;
+    width: 100%;
+    height: 160px;
+    background: url(../img/truck_about.jpg), #C4C4C4;
+    border: 0.25px solid #C8A35F;
+    box-sizing: border-box;
+}
+
+/* footer */
+
+.section_footer {
+    background: #C8A35F;
+    padding: 60px 0;
+}
+
+.section_footer .logo_img {
+    border: none;
+    padding: 0;
+    margin-right: 30px;
+}
+
+.footer_container {
+    display: flex;
+    align-items: center;
+}
+
+.footer_container .mail_container {
+    color: #2F343A;
+}
+
+.address {
+    margin-bottom: 10px;
+    margin-right: 89px;
+}
+
+.footer_numbers .phone_number:first-child {
+    margin-bottom: 10px;
+    margin-right: 213px;
+}
+
+.developer_link {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #2F343A;
+    margin-top: 20px;
+}
+
