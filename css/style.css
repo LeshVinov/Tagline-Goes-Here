@@ -124,12 +124,12 @@ a {
     color: #FFFFFF;
     text-decoration: none;
     margin-right: 30px;
+    transition: all .3s;
 }
 
 .nav_item:last-child {
     margin-right: 0;
 }
-
 /* section_promo */
 
 .section_promo {
@@ -469,14 +469,24 @@ a {
     color: #2F343A;
 }
 
-.address {
-    margin-bottom: 10px;
+.footer_address {
     margin-right: 89px;
 }
 
-.footer_numbers .phone_number:first-child {
+.address {
     margin-bottom: 10px;
+}
+
+.footer_numbers {
     margin-right: 213px;
+}
+
+.phone_number:first-child {
+    margin-bottom: 10px;
+}
+
+.developers_container {
+    align-items: center;
 }
 
 .developer_link {
@@ -488,3 +498,350 @@ a {
     margin-top: 20px;
 }
 
+/* animation */
+
+.logo {
+    transition: all .3s;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+.button  {
+    transition: all .3s;
+}
+
+.button_show-more:hover {
+    background: #7c653a;
+}
+
+.arrow_text {
+    transition: all .3s;
+}
+
+.arrow_text:hover {
+    color: #ffd079;
+    filter: drop-shadow(0 0 5px gold);
+}
+
+.nav_item:hover {
+    color :#C8A35F;
+    filter: drop-shadow(0 0 5px gold)
+}
+
+/* adaptation and burger */
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+   .container {
+       width: 90%;
+       margin: auto;
+   }
+   .section {
+       width: 90%;
+       margin: auto;
+   }
+   .section_europe-ride {
+       position: relative;
+   }
+   .section_europe-ride::before, .section_europe-ride::after {
+       top: 0px;
+   }
+   .lower_header {
+       max-width: 90%;
+   }
+   .truck_img {
+       position: absolute;
+       width: 40%;
+       height: 40%;
+       top: 200px;
+       right: 200px;
+   }
+   .cards {
+       justify-content: center;
+   }
+   .section_about {
+       padding-top: 150px;
+   }
+   .section_title {
+       z-index: 1;
+   }
+   .card_about-truck {
+    display: none;
+   }
+   .about_cards {
+       justify-content: center;
+   }
+   .section .footer {
+       max-width: 100%;
+   }
+   .footer_numbers .phone_number:first-child {
+       margin: 0;
+   }
+   .footer_numbers {
+       margin-right: 20px;
+   }
+   .footer_address {
+    margin-right: 59px;
+   }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+    .office_loc {
+        display: none;
+    }
+    .slider_title {
+        font-size: 30px;
+    }
+    .section_desc {
+        font-size: 15px;
+    }
+    .truck_img {
+        width: 50%;
+        transform: scale(0.9);
+        right: 100px
+    }
+    .developers_container {
+        display: none;
+    }
+    .footer_numbers {
+        margin-right: 0;
+    }
+    .footer_address {
+        margin-right: 39px;
+    }
+    .footer_logo .logo_text {
+        display: none;
+    }
+    .phone_number {
+        margin-bottom: 10px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+    .section_promo-title {
+        font-size: 50px;
+    }
+    .navigation_header .nav_item:nth-child(2) {
+        margin-right: 0;
+    }
+    .navigation_header .nav_item:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .logo_img {
+        padding-right: 20px;
+    }
+    .navigation_header {
+        margin-left: 20px;
+        text-align: center;
+    }
+    .slider_title {
+        font-size: 25px;
+    }
+    .truck_img {
+        width: 50%;
+        height: 20%;
+        transform: scale(1.2);
+        top: 300px;
+        right: -25px
+    }
+    .slider_title {
+        font-size: 20px;
+    }
+    .button_show-more {
+        padding: 15px 20px;
+    }
+    .footer_address {
+        margin-right: 0;
+    }
+    .footer_numbers {
+        display: none;
+    }
+    .section_about {
+        padding-bottom: 100px;
+    }
+    .section_services {
+        padding-bottom: 0;
+    }
+
+
+
+
+    /* burger-menu */
+
+    .menu-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        margin-right: 10px;
+        z-index: 4;
+    }
+
+    .menu-btn__burger {
+        width: 30px;
+        height: 3px;
+        background: #FFFFFF;
+        border-radius: 5px;
+        transition: all .5s ease-in-out;
+    }
+
+    .menu-btn__burger::after,
+    .menu-btn__burger::before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background: #FFFFFF;
+        border-radius: 5px;
+        transition: all .5s ease-in-out;
+    }
+
+    .menu-btn__burger::before {
+        transform: translateY(-10px);
+    }
+
+    .menu-btn__burger::after {
+        transform: translateY(10px);
+    }
+
+    .menu-btn.open .menu-btn__burger {
+        transform: translateX(-50px);
+        background: transparent;
+    }
+
+    .menu-btn.open .menu-btn__burger::before {
+        transform:  rotate(45deg) translate(35px, -35px);
+    }
+
+    .menu-btn.open .menu-btn__burger::after {
+        transform:  rotate(-45deg) translate(35px, 35px);
+    }
+
+    .nav_conatiner {
+        display: block;
+    }
+
+    .upper_header {
+        position: relative;
+        z-index: 4;
+    }
+
+    .logo_img {
+        position: relative;
+        z-index: 4;
+    }
+
+    .nav_conatiner {
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 34%;
+        background: #2F343A;
+        margin-left: 0;
+        z-index: 2;
+        padding: 180px 0 0 0;
+        transition: all .5s ease-in-out;
+    }
+
+    .nav_conatiner.open {
+        top: 0;
+    }
+
+    .navigation_header {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .nav_item {
+        margin: 0;
+        margin-bottom: 30px;
+        text-align: center;
+        border-bottom: 1px solid #C8A35F;
+        padding-bottom: 15px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .navigation_header .nav_item:nth-child(2) {
+        margin-right: 0;
+    }
+}
+
+/* Extra small Devices, Phones */
+@media only screen and (max-width: 480px) {
+    .promo_container {
+        padding: 20px;
+    }
+    .section_promo-title {
+        font-size: 35px;
+    }
+    .arrowR_container {
+        display: flex;
+        flex-direction: column;
+    }
+    .arrowR_container .arrow_text {
+        margin-right: 0;
+    }
+    .arrowL_container {
+        display: flex;
+        flex-direction: column;
+    }
+    .arrowL_container .arrow_text {
+        margin-left: 0;
+    }
+    .slider_title {
+        line-height: 20px;
+    }
+    .section_title::before {
+        bottom: 70px;
+    }
+    .section_desc {
+        max-width: 150px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .truck_img {
+        top: 180px;
+        right: -15px;
+    }
+    .abutus {
+        flex-direction: column;
+    }
+    .section_about .section_text-container::after {
+        display: none;
+    }
+    .section_about .section_desc {
+        max-width: 100%;
+    }
+    .section_europe-ride::after {
+        height: 400px
+    }
+    .section_europe-ride::before {
+        height: 400px 
+    }
+    .section_europe-ride {
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+
+    
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+    /*  */
+}
