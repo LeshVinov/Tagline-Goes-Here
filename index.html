@@ -1,203 +1,253 @@
 <!DOCTYPE html>
-<html lang="Ru">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Tagline Goes Here</title>
+    <title>Buhone</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
 </head>
 <body>
-    <header class="section_header">
-        <div class="upper_header">
-            <div class="upper_header_container container">            
-                <div class="language_settings_container">
-                    <button class="button language_item">Ru</button>
-                    <button class="button language_item">Eng</button>
-                    <button class="button language_item">Fr</button>
-                </div>
-                <!-- /.language_settings_container -->
-                <p class="phone_number">8 (800) 123-45-67</p>
-                <a href="#" class="mail_container">sales@log.ru</a>
-            </div>
-            <!-- /.upper_header -->
-        </div>
-        <!-- /.upper_header_container -->
-        <div class="lower_header сontainer">
+    <header class="section section_header">
+        <div class="container block">
             <div class="logo_container">
-                <div class="logo_img">
-                    <a href="#"><img src="./img/logo.png" alt="Лого" class="logo"></a>
-                    <img src="./img/logo_text.svg" alt="Текст лого" class="logo_text">
-                </div>
-                <!-- /.logo_img -->
-                <div class="office_loc">
-                    <img src="./img/location.png" alt="Расположение" class="loc_img">
-                    <a href="#" class="office_link">Наши офисы</a>
-                </div>
-                <!-- /.office_loc -->
+                <a href="#" class="logo_link"><img src="./img/logo.png" alt="Лого" class="logo_img"></a>
+                <p class="logo_text">BuhOne</p>
             </div>
             <!-- /.logo_container -->
-            <div class="nav_conatiner">
-                <nav class="navigation_header">
-                  <a href="#" class="nav_item">услуги</a>
-                  <a href="#" class="nav_item">О компании</a>
-                  <a href="#" class="nav_item">вакансии</a>
-                  <a href="#" class="nav_item">контакты</a>  
-                </nav>
-            </div>
-            <!-- /.nav_conatiner container -->
             <div class="menu-btn">
                 <div class="menu-btn__burger"></div>
+                <!-- /.menu-btn__burger -->
             </div>
-            <!-- menu-btn -->
+            <!-- /.menu-btn -->
+            <div class="header-main_container">
+                <div class="header_contacts">
+                    <p class="header-contact_item phone_img">8 (111) 222-33-44</p>
+                    <p class="header-contact_item cock_img">Пн-Пт 10:00-18:00</p>
+                    <p class="header-contact_item mail_img">order@buhone.ru</p>
+                    <p class="header-contact_item addres_img">Невский пр. 130</p>
+                </div>
+                <!-- /.header_contacts -->
+                <nav class="header_nav">
+                    <a href="#" class="nav_item">Главная</a>
+                    <a href="#" class="nav_item">услуги</a>
+                    <a href="#" class="nav_item">кейсы</a>
+                    <a href="#" class="nav_item">о компании</a>
+                    <a href="#" class="nav_item">контакты</a>
+                </nav>
+                <!-- /.header_nav -->
+            </div>
+            <!-- /.header-main_container -->
         </div>
-        <!-- /.lower_header сontainer -->
+        <!-- /.container block-->
     </header>
     <!-- /.section section_header -->
     <section class="section section_promo">
-        <div class="promo_container container">
-            <h1 class="section_promo-title">Грузовые перевозки</h1>
-            <p class="section_promo-subtitle">Перевозка крупногабаритных грузов по России и Европе. Полное экспедирование, страхование, упаковка и хранение грузов</p>
+        <div class="container promo_container">
+            <h1 class="promo_title">Бухгалтерские услуги <br> в Санкт-Петербурге</h1>
+            <button class="button promo_button">Наша презентация</button>
+            <div class="slider_circles">
+                <div class="slider_item"></div>
+                <div class="slider_item"></div>
+                <div class="slider_item selected"></div>
+                <div class="slider_item"></div>
+            </div>
+            <!-- /.slider_circles -->
+            <div class="slide_arrows">
+               <button class="arrow"></button>
+               <button class="arrow"></button>
+            </div>
+            <!-- /.slide_arrows -->
         </div>
-        <!-- /.promo_container container -->
-        <a href="#" class="mouse_link"></a>
+        <!-- /.container promo_container -->
     </section>
     <!-- /.section section_promo -->
-    <section class="section section_europe-ride">
-        <div class="section_info container">
-            <div class="section_text-container">
-                <h2 class="section_title slider_title">грузоперевозки по европе</h2>
-                <p class="section_desc slider_desc">Страны Евросоюза, а также Украина, <br> Белоруссия со всеми документами.</p>
-                <button class="button button_show-more">ПОДРОБНее</button>
-            </div>
-            <!-- /.section_text-container -->
-            <img src="./img/TruckYellow.png" alt="Грузовик" class="truck_img">
-            <div class="slider-arrows_container">
-                <div class="arrowR_container">
-                    <a href="#" class="arrow_text">След</a>
-                    <img src="./img/ArrowR.svg" alt="Вспышка справа" class="arrow_img">
-                </div>
-                <!-- /.arrowR_container -->
-                <div class="arrowL_container">
-                    <img src="./img/ArrowL.svg" alt="Вспышка слева" class="arrow_img">
-                    <a href="#" class="arrow_text">Назад</a>
-                </div>
-                <!-- /.arrowL_container -->
-            </div>
-            <!-- /.slider-arrows_container -->
-        </div>
-        <!-- /.section_info container -->
-    </section>
-    <!-- /.section section_europe-ride -->
-    <section class="section section_services">
-        <div class="container">
-            <h2 class="section_title slider_title">услуги</h2>
+    <section class="section section_special">
+        <div class="container special_container">
+            <h3 class="section_subtitle">Наши услуги</h3>
+            <h2 class="section_title">Мы специализируемся</h2>
             <div class="cards">
-                <div class="card">
-                    <p class="card_name">Авиаперевозки</p>
+                <div class="special_card">
+                    <p class="special_title">Бухгалтерское обслуживание</p>
                 </div>
-                <!-- /.card -->
-                <div class="card">
-                    <p class="card_name">Авиаперевозки</p>
+                <!-- /.special_card -->
+                <div class="special_card">
+                    <p class="special_title">Бухгалтерское обслуживание</p>
                 </div>
-                <!-- /.card -->
-                <div class="card">
-                    <p class="card_name">Авиаперевозки</p>
+                <!-- /.special_card -->
+                <div class="special_card">
+                    <p class="special_title">Бухгалтерское обслуживание</p>
                 </div>
-                <!-- /.card -->
-                <div class="card">
-                    <p class="card_name">Авиаперевозки</p>
+                <!-- /.special_card -->
+                <div class="special_card without_margin">
+                    <p class="special_title">Бухгалтерское обслуживание</p>
                 </div>
-                <!-- /.card -->
-                <div class="card">
-                    <p class="card_name">Авиаперевозки</p>
+                <!-- /.special_card -->
+                <div class="special_card without_margin">
+                    <p class="special_title">Бухгалтерское обслуживание</p>
                 </div>
-                <!-- /.card -->
-                <div class="card">
-                    <p class="card_name">Авиаперевозки</p>
+                <!-- /.special_card -->
+                <div class="special_card without_margin">
+                    <p class="special_title">Бухгалтерское обслуживание</p>
                 </div>
-                <!-- /.card -->
-                <div class="card">
-                    <p class="card_name">Авиаперевозки</p>
-                </div>
-                <!-- /.card -->
-                <div class="card">
-                    <p class="card_name">Авиаперевозки</p>
-                </div>
-                <!-- /.card -->
+                <!-- /.special_card -->
             </div>
             <!-- /.cards -->
         </div>
-        <!-- /.container -->
+        <!-- /.container special_container -->
+        
     </section>
-    <!-- /.section section_services -->
-    <section class="section section_about">
-        <div class="block container abutus">
-            <div class="section_text-container">
-                <h2 class="section_title slider_title">О компании</h2>
-                <p class="section_desc slider_desc">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
+    <!-- /.section section_special -->
+    <section class="section section_abutus">
+        <div class="container">
+            <h3 class="section_subtitle">О нас</h3>
+            <div class="abutus block">
+                <div class="abutus_text">
+                    <h2 class="section_title">Компания <p class="section_title-alt">ИвановПром</p></h2>
+                    <p class="section_desc">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
+                </div>
+                <!-- /.abutus_text -->
+                <div class="abutus_cards">
+                    <div class="abutus_card">
+                        <strong class="trade_number">90</strong>
+                        <p class="trade_text">Завершено крупных сделок</p>
+                        <a href="#" class="case_link">Все кейсы</a>
+                    </div>
+                    <!-- /.abutus_card -->
+                    <div class="abutus_card">
+                        <strong class="trade_number">90</strong>
+                        <p class="trade_text">Завершено крупных сделок</p>
+                        <a href="#" class="case_link">Все кейсы</a>
+                    </div>
+                    <!-- /.abutus_card -->
+                    <div class="abutus_card">
+                        <strong class="trade_number">90</strong>
+                        <p class="trade_text">Завершено крупных сделок</p>
+                        <a href="#" class="case_link">Все кейсы</a>
+                    </div>
+                    <!-- /.abutus_card -->
+                    <div class="abutus_card">
+                        <strong class="trade_number">90</strong>
+                        <p class="trade_text">Завершено крупных сделок</p>
+                        <a href="#" class="case_link">Все кейсы</a>
+                    </div>
+                    <!-- /.abutus_card -->
+                </div>
+                <!-- /.abutus_cards -->
             </div>
-            <!-- /.section_text-container --> 
-            <div class="about_cards">
-                <div class="card_about">
-                    <p class="number">48</p>
-                    <p class="ofnumber">офисов</p>
-                    <p class="card_desc">В Европе и СНГ</p>
-                </div>
-                <!-- /.card_about -->
-                <div class="card_about">
-                    <p class="number">361</p>
-                    <p class="ofnumber">грузовиков</p>
-                    <p class="card_desc">Volvo, Scania</p>
-                </div>
-                <!-- /.card_about -->
-                <div class="card_about-truck"></div>
-                <!-- /.card_about-truck -->
-                <div class="card_about-truck"></div>
-                <!-- /.card_about-truck -->
-                <div class="card_about">
-                    <p class="number">1500</p>
-                    <p class="ofnumber">сотрудников</p>
-                    <p class="card_desc">профессионалов</p>
-                </div>
-                <!-- /.card_about -->
-            </div>
-            <!-- /.about_cards -->           
+            <!-- /.abutus block -->
         </div>
         <!-- /.container -->
     </section>
-    <!-- /.section section_about -->
-    <aside class="map">
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5c88f090c7821016722084d0aa6ec12414eac7ba74dc5737f06f7e0cdf3f79f2&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
-    </aside>
-    <!-- /.map -->
-    <footer class="section_footer">
-        <div class="footer_container container">
-            <div class="logo_img footer_logo">
-                <img src="./img/logo_footer.png" alt="Лого" class="logo">
-                <img src="./img/logo_text_footer.png" alt="Текст лого" class="logo_text">
+    <!-- /.section section_abutus -->
+    <section class="section section_clients">
+        <div class="container companies_container">
+            <h3 class="section_subtitle">Наши клиенты</h3>
+            <h2 class="section_title">С нами работают</h2>
+            <div class="companies_imgs block">
+                <img src="./img/Microsoft_img.png" alt="Тут Ни-ко-го нет" class="company_img">
+                <img src="./img/Microsoft_img.png" alt="Тут Ни-ко-го нет" class="company_img">
+                <img src="./img/Microsoft_img.png" alt="Тут Ни-ко-го нет" class="company_img">
+                <img src="./img/Microsoft_img.png" alt="Тут Ни-ко-го нет" class="company_img">
             </div>
-            <!-- /.logo_img -->
-            <div class="footer_address">
-                <p class="address">123456, Санкт-Петербург, Невский пр-кт 127</p>
-                <p class="mail_container">sales@log.ru</p>
+            <!-- /.companies_imgs -->
+            <div class="slider_circles">
+                <div class="slider_item alt"></div>
+                <div class="slider_item alt"></div>
+                <div class="slider_item selected_alt"></div>
+                <div class="slider_item alt"></div>
             </div>
-            <!-- /.footer_address -->
-            <div class="footer_numbers">
-                <p class="phone_number">+7 (812) 344-56-65</p>
-                <p class="phone_number">+7 (812) 344-56-65</p>
+            <!-- /.slider_circles -->
+            <div class="slide_arrows">
+               <button class="arrow alt_arrow"></button>
+               <button class="arrow alt_arrow"></button>
             </div>
-            <!-- /.footer_numbers -->
-            <div class="developers_container">
-                <a href="#" class="developer_link">Разработано - D-E-N.ru</a>
-            </div>
-            <!-- /.developers_container -->
+            <!-- /.slide_arrows -->
         </div>
-        <!-- /.footer_container container -->
+        <!-- /.container -->
+    </section>
+    <!-- /.section section_work-with-us -->
+    <section class="section section_feedback">
+        <div class="container feedback">
+            <h3 class="section_subtitle">Отзывы</h3>
+            <h2 class="section_title">Ваши благодарности</h2>
+            <div class="feedback_container">
+                <p class="feedback_text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. </p>
+                <div class="user_info">
+                    <img src="./img/woman_moment.png" alt="Пользователь" class="user_img">
+                    <div class="username">
+                        <h4 class="name_user">Екатерина Иванова</h4>
+                        <p class="user_post">Директор ООО “Раз-два”</p>
+                    </div>
+                    <!-- /.username -->
+                </div>
+                <!-- /.user_info -->
+            </div>
+            <!-- /.feedback_container -->
+            <div class="slider_circles">
+                <div class="slider_item alt"></div>
+                <div class="slider_item alt"></div>
+                <div class="slider_item selected_alt"></div>
+                <div class="slider_item alt"></div>
+            </div>
+            <!-- /.slider_circles -->
+            <div class="slide_arrows">
+               <button class="arrow alt_arrow"></button>
+               <button class="arrow alt_arrow"></button>
+            </div>
+            <!-- /.slide_arrows -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.section section_feedback -->
+    <section class="section section_input">
+        <div class="container block input_block">
+            <div class="input_text">
+                <h2 class="section_title">Связь с нами</h2>
+                <p class="section_desc">У вас остались вопросы? Напишите нам - мы ответим в ближайшее время!</p>
+                <div class="input_contacts">
+                    <p class="header-contact_item phone_img_alt">+7 (111) 222-33-44</p>
+                    <p class="header-contact_item mail_img_alt">order@bu-one.ru</p>
+                </div>
+                <!-- /.input_contacts -->
+            </div>
+            <!-- /.input_text -->
+            <form action="#" class="input_form-container">
+                <div class="input">
+                    <div class="input_container">
+                        <span class="input_name">Имя</span>
+                        <input type="text" class="input_form" name="first-name" placeholder="Иван">
+                    </div>
+                    <!-- /.input_container -->
+                    <div class="input_container">
+                        <span class="input_name">Фамилия</span>
+                        <input type="text" class="input_form" name="second-name" placeholder="Иванов">
+                    </div>
+                    <!-- /.input_container -->
+                </div>
+                <!-- /.input -->
+                <div class="input_container">
+                    <span class="input_name">Сообщение</span>
+                    <textarea name="message" id="message_contact" class="input_form contact_form" placeholder="Ваше сообщение"></textarea>
+                </div>
+                <!-- /.input_container -->
+                <button class="button button_input">Отправить сообщение</button>
+            </form>
+            <!-- /.input_form -->
+        </div>
+        <!-- /.container block input_block -->
+    </section>
+    <!-- /.section section_input -->
+    <footer class="section section_footer">
+        <div class="container block copyright_block">
+            <p class="copyright">2019 (с) Все права защищены. БухОне.ру</p>
+            <p class="develop">Разработано: BuhOne</p>
+        </div>
+        <!-- /.container block copyright_block -->
     </footer>
     <!-- /.section section_footer -->
     <script src="./js/script.js"></script>
